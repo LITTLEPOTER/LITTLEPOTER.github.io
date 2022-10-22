@@ -1,0 +1,62 @@
+.status-bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 5px 3px;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.status-bar_column {
+    width: 33%;
+    position: relative;
+}
+
+.status-bar_column:nth-child(2) {
+    display: flex;
+    justify-content: center;
+}
+
+.status-bar_column:last-child {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.status-bar_column:first-child span {
+    margin-right: 5px;
+}
+
+
+
+#batteryImg {
+    margin: 0px 5px;
+}
+
+
+
+#chargingImg {
+    display: flex;
+    position: absolute;
+    right: 10px;
+    color:darkgray;
+    font-size: 16px;
+    animation-duration: 3s;
+    animation-name: show;
+    animation-iteration-count: infinite;
+}
+
+@keyframes show{
+    0%{
+        opacity: 1;
+    }
+
+    50%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
