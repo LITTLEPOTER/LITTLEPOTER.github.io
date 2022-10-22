@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friends - Kokoa Talk</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="status-bar">
+        <div class="status-bar_column">
+            <span>No Service</span>
+            <i class="fa-solid fa-wifi"></i>
+        </div>
+        <div class="status-bar_column" id="time">
+            <span>00:00</span>
+        </div>
+        <div class="status-bar_column">
+            <span id="battery">0%</span>
+            <i class="fa-solid fa-battery-full fa-lg" id="batteryImg"></i>
+            <i class="fa-solid fa-bolt" id="chargingImg"></i>
+        </div>
+    </div>
+
+    <header class="screen-header">
+        <h1 class="screen-header_title">Friends</h1>
+        <div class="screen-header_icons">
+            <span><i class="fa-solid fa-magnifying-glass fa-lg"></i></span>
+            <span><i class="fa-solid fa-music fa-lg"></i></span>
+            <span><i class="fa-solid fa-gear fa-lg"></i></span>
+        </div>
+    </header>
+
+    <a id="friends-display-link">
+        <i class="fa-solid fa-circle-info"></i> Friends' Names Display <i class="fa-solid fa-chevron-right fa-xs"></i>
+    </a>
+    <main class="friends-screen"></main>
+
+    <div class="user-component">
+        <div class="user-component_column">
+            <img src="https://mail.google.com/mail/u/0?ui=2&ik=0508fd7cae&attid=0.1&permmsgid=msg-f:1747209841330848919&th=183f5617f4978497&view=att&disp=safe&realattid=183f561073f1d9494781" class="user-component_avatar user-component_avatar--xl">
+            <div class="user-component_text">
+                <h4 class="user-component_title">쏭</h4>
+                <!--<h6 class="user-component_subtitle"></h6>  -->
+            </div>
+        </div>
+        <div class="user-component_column"></div>
+    </div>
+    <div class="friends-screen_channel">
+        <div class="friends-screen_channel-header">
+            <span>Channel</span> 
+            <i class="fa-solid fa-chevron-up fa-xs"></i>
+        </div>
+    </div>
+    <div class="user-component">
+        <div class="user-component_column">
+            <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5764%2F2022%2F10%2F15%2F0000149219_001_20221015161003136.jpg&type=a340" class="user-component_avatar user-component_avatar--sm">
+            <div class="user-component_text">
+                <h4 class="user-component_title user-component_title--not-bold">Channel</h4>
+            </div>
+        </div>
+        <div class="user-component_column">2 <i class="fa-solid fa-chevron-right fa-xs"></i></div>
+    </div>
+
+    <nav class="nav">
+        <ul class="nav_ul">
+            <li class="nav_li"><a class="nav_a"href="friends.html"><i class="fa-solid fa-user fa-2x"></i></a></li>
+            <li class="nav_li">
+                <a class="nav_a"href="#">
+                    <span class="nav_notification">1</span>
+                    <i class="fa-regular fa-comment fa-2x"></i>
+                </a></li>
+            <li class="nav_li"><a class="nav_a"href="#"><i class="fa-solid fa-magnifying-glass fa-2x"></i></a></li>
+            <li class="nav_li">
+                <a class="nav_a"href="#">
+                    <span class="nav_secNotification"></span>
+                    <i class="fa-solid fa-ellipsis fa-2x"></i>
+                </a></li>
+        </ul>
+    </nav>
+
+    <script src="https://kit.fontawesome.com/5ef78ea982.js" crossorigin="anonymous"></script>
+    <script src="js/time.js"></script>
+    <script src="js/battery.js"></script>
+</body>
+</html>
